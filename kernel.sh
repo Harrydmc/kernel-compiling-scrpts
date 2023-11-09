@@ -52,20 +52,20 @@ ZIPNAME="azure"
 
 # Build Author
 # Take care, it should be a universal and most probably, case-sensitive
-AUTHOR="Panchajanya1999"
+AUTHOR="harrydmc"
 
 # Architecture
 ARCH=arm64
 
 # The name of the device for which the kernel is built
-MODEL="Redmi Note 7 Pro"
+MODEL="Lg V60"
 
 # The codename of the device
-DEVICE="violet"
+DEVICE="timelm"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=vendor/violet-perf_defconfig
+DEFCONFIG=vendor/timelm-perf_defconfig
 
 # Specify compiler.
 # 'clang' or 'gcc'
@@ -82,7 +82,7 @@ LINKER=ld.lld
 INCREMENTAL=1
 
 # Push ZIP to Telegram. 1 is YES | 0 is NO(default)
-PTTG=1
+PTTG=0
 if [ $PTTG = 1 ]
 then
 	# Set Telegram Chat ID
@@ -97,7 +97,7 @@ FILES=Image.gz-dtb
 
 # Build dtbo.img (select this only if your source has support to building dtbo.img)
 # 1 is YES | 0 is NO(default)
-BUILD_DTBO=1
+BUILD_DTBO=0
 if [ $BUILD_DTBO = 1 ]
 then
 	# Set this to your dtbo path.
@@ -107,7 +107,7 @@ fi
 
 # Sign the zipfile
 # 1 is YES | 0 is NO
-SIGN=1
+SIGN=0
 if [ $SIGN = 1 ]
 then
 	#Check for java
