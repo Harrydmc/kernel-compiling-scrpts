@@ -101,6 +101,6 @@
           bash kernel.sh
 
      Or, if u forked it and already completed setup as per your requirement, u can simply
-     	  curl https://raw.githubusercontent.com/<YOUR_GITHUB_USERNAME>/myscripts/master/kernel.sh | bash
+     	  curl https://raw.githubusercontent.com/<YOUR_GITHUB_USERNAME>/kernel-compiling-scrpts/master/kernel.sh | bash
           
 ```
